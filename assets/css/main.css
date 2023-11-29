@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #AEAEAD;
+}
+.nav body.scrolled .nav {
+  background-color: red;
+}
+.nav .estateLogo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav .estateLogo p {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: white;
+}
+.nav .estateUl {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+}
+.nav .estateUl .estateli a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: white;
+  transition: 0.6s ease;
+}
+.nav .estateUl .estateli a:hover {
+  color: #FD784F;
+}
+.nav .estateUl .estateli .estateBtn {
+  background-color: #FD784F;
+  border: none;
+  min-height: 44px;
+  width: 263px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 44px;
+  font-weight: 600;
+  color: white;
+  cursor: text;
+}
+
+#findHome {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/image/home_slider_bcg\ \(1\).jpg);
+  width: 100%;
+  min-height: 651px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#findHome .findHomeTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#findHome .findHomeTxt h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 92px;
+  line-height: 110px;
+  font-weight: 700;
+  color: white;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  #findHome .findHomeTxt h1 {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #findHome .findHomeTxt h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #findHome .findHomeTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #findHome .findHomeTxt h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 506px) {
+  #findHome .findHomeTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #findHome .findHomeTxt h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 331px) {
+  #findHome .findHomeTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #findHome .findHomeTxt h1 {
+    font-size: 25px;
+  }
+}
+#featuredProperies {
+  width: 100%;
+  min-height: 1106px;
+  display: flex;
+}
+#featuredProperies .featuredProperiesTxt {
+  display: flex;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+#featuredProperies .featuredProperiesTxt .line {
+  width: 3px;
+  height: 25px;
+  background-color: #FD784F;
+}
+#featuredProperies .featuredProperiesTxt h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #1e2c4e;
+}
+#featuredProperies .featuredProperiesTxt p {
+  color: #b0b1b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#featuredProperies .featureAllDivCnt {
+  width: 100%;
+  min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+#featuredProperies .featureAllDivCnt .feature {
+  width: 100%;
+  min-height: 650px;
+  background-color: #EDEFF4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#featuredProperies .featureAllDivCnt .feature img {
+  width: 100%;
+}
+#featuredProperies .featureAllDivCnt .feature .featuredTxt {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#featuredProperies .featureAllDivCnt .feature .featuredTxt a {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  font-family: "Open Sans", sans-serif;
+  color: #0e1d41;
+  cursor: pointer;
+}
+#featuredProperies .featureAllDivCnt .feature .featuredTxt p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Open Sans", sans-serif;
+  color: #838383;
+}
+#featuredProperies .featureAllDivCnt .feature .featureAllCnt {
+  width: 83%;
+}
+#featuredProperies .featureAllDivCnt .feature .featureAllCnt .featureItems {
+  display: flex;
+  gap: 25px;
+  height: 40%;
+}
+#featuredProperies .featureAllDivCnt .feature .featureAllCnt .featureItems p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+#featuredProperies .featureAllDivCnt .feature .featureAllCnt .featureItems span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+#featuredProperies .featureAllDivCnt .feature .featureAllCnt .featureItems span i {
+  font-size: 25px;
+}
+#featuredProperies .featureAllDivCnt .feature .featureCtg {
+  display: flex;
+  flex-wrap: wrap;
+  width: 83%;
+  gap: 5px;
+}
+#featuredProperies .featureAllDivCnt .feature .featureCtg P {
+  width: 32%;
+  background-color: #FD784F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+#featuredProperies .featureAllDivCnt .price {
+  width: 100%;
+  min-height: 86px;
+  background-color: #1E2C4E;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#featuredProperies .featureAllDivCnt .price i {
+  color: #FD784F;
+  font-size: 30px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#featuredProperies .featureAllDivCnt .price .ForSale {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+}
+#featuredProperies .featureAllDivCnt .price .ForSale p {
+  width: 40%;
+}
+#featuredProperies .featureAllDivCnt .price .ForSale p span {
+  font-size: 25px;
+  font-weight: 500;
+}
+#featuredProperies .featureAllDivCnt .featured {
+  width: 35%;
+  height: 5%;
+  top: 3%;
+  background-color: #FD784F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+}
+
+#clientstestionials {
+  width: 100%;
+  min-height: 755px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/image/testimonials_background.jpg);
+}
+#clientstestionials .clientstestionialsTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+#clientstestionials .clientstestionialsTxt .clientstestionialsLine {
+  width: 3px;
+  height: 25px;
+  background-color: #FD784F;
+}
+#clientstestionials .clientstestionialsTxt h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  height: 40px;
+  display: flex;
+  align-items: end;
+  color: white;
+}
+#clientstestionials .clientstestionialsTxt span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #b0b1b3;
+}
+#clientstestionials .clientstestionialsTxt p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  color: white;
+  width: 73%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#clientstestionials .clientstestionialsTxt .natalieSmith {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#clientstestionials .clientstestionialsTxt .natalieSmith img {
+  border-radius: 50%;
+}
+#clientstestionials .clientstestionialsTxt .natalieSmith span {
+  color: #fd784f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+#clientstestionials .clientstestionialsTxt .natalieSmith .client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+#citiesClients {
+  width: 100%;
+  min-height: 711px;
+  background-image: url(/assets/image/world.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#citiesClients .citiesClientsTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 300px;
+}
+#citiesClients .citiesClientsTxt h3 {
+  text-transform: uppercase;
+  color: #1e2c4e;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: "Open Sans", sans-serif;
+  height: 40px;
+  display: flex;
+  align-items: end;
+}
+#citiesClients .citiesClientsTxt span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #b0b1b3;
+  font-family: "Open Sans", sans-serif;
+}
+#citiesClients .citiesClientsTxt .citiesClientsLine {
+  width: 3px;
+  height: 23px;
+  background-color: #FD784F;
+}
+#citiesClients .citiesClientsImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 28px;
+}
+#citiesClients .citiesClientsImg .citiesClientsFive {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#citiesClients .citiesClientsImg .citiesClientsFive img {
+  width: 100%;
+}
+#citiesClients .citiesClientsImg .citiesClientsFive p {
+  position: absolute;
+  width: 55%;
+  bottom: 0;
+  height: 34px;
+  background: #FD784F;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 600;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  #citiesClients .citiesClientsImg .NewYork {
+    display: none;
+  }
+  #citiesClients .citiesClientsImg .Geneva {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #citiesClients .citiesClientsImg .NewYork {
+    display: none;
+  }
+  #citiesClients .citiesClientsImg .Geneva {
+    display: none;
+  }
+  #citiesClients .citiesClientsImg .Marbella {
+    display: none;
+  }
+}
+footer {
+  width: 100%;
+  height: 49px;
+}
+footer #copyright {
+  width: 100%;
+  height: 100%;
+  background-color: #040B1D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #copyright .copyrightTxt {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  justify-content: center;
+}
+footer #copyright .copyrightTxt p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #485165;
+}
+footer #copyright .copyrightTxt p span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #007bff;
+  cursor: pointer;
+}
+footer #copyright .copyrightTxt p span:hover {
+  color: #0056b3;
+}

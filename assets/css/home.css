@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 1px solid #aeaead;
+  position: absolute;
+}
+.nav .Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22%;
+  height: 100%;
+  flex-direction: column;
+}
+.nav .Logo p {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.nav .ulnav {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  gap: 47px;
+}
+.nav .ulnav .ulli a {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+.nav .ulnav .ulli a:hover {
+  color: #fd784f;
+}
+.nav .ulnav .ulli .button {
+  min-height: 40px;
+  width: 250px;
+  background-color: #fd784f;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  cursor: text;
+}
+
+#findyourhome {
+  width: 100%;
+  min-height: 670px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/image/home_slider_bcg\ \(1\).jpg);
+}
+#findyourhome .findyourhomemain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#findyourhome .findyourhomemain h1 {
+  width: 100%;
+  height: 130px;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+}
+
+@media screen and (max-width: 991px) {
+  #findyourhome .findyourhomemain h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #findyourhome .findyourhomemain h1 {
+    font-size: 37px;
+  }
+}
+#properties {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 1120px;
+}
+#properties .propertiesmain {
+  display: flex;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+#properties .propertiesmain .best {
+  width: 3px;
+  height: 25px;
+  background-color: #fd784f;
+}
+#properties .propertiesmain h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e2c4e;
+}
+#properties .propertiesmain p {
+  color: #b0b1b3;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#properties .bestoffers {
+  width: 100%;
+  min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+#properties .bestoffers .offers {
+  width: 100%;
+  min-height: 650px;
+  background-color: #edeff4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#properties .bestoffers .offers img {
+  width: 100%;
+}
+#properties .bestoffers .offers .bestofferstext {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#properties .bestoffers .offers .bestofferstext a {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  font-family: "Open Sans", sans-serif;
+  color: #0e1d41;
+  cursor: pointer;
+}
+#properties .bestoffers .offers .bestofferstext p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "Open Sans", sans-serif;
+  color: #838383;
+}
+#properties .bestoffers .offers .bestoffersall {
+  width: 83%;
+}
+#properties .bestoffers .offers .bestoffersall .bestofferstext2 {
+  display: flex;
+  gap: 20px;
+  height: 40%;
+}
+#properties .bestoffers .offers .bestoffersall .bestofferstext2 p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+#properties .bestoffers .offers .bestoffersall .bestofferstext2 span {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+#properties .bestoffers .offers .bestoffersall .bestofferstext2 span img {
+  width: 25px;
+}
+#properties .bestoffers .offers .offerhottub {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  gap: 5px;
+  text-align: center;
+}
+#properties .bestoffers .offers .offerhottub p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background-color: #fd784f;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+}
+#properties .bestoffers .price {
+  width: 100%;
+  min-height: 75px;
+  background-color: #1e2c4e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#properties .bestoffers .price i {
+  color: #fd784f;
+  font-size: 30px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#properties .bestoffers .price .sale {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+#properties .bestoffers .price .sale p {
+  width: 45%;
+}
+#properties .bestoffers .price .sale p span {
+  font-size: 27px;
+  font-weight: 550;
+}
+#properties .bestoffers .featured {
+  width: 41%;
+  height: 7%;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fd784f;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+}
+
+#clientstestimonials {
+  width: 100%;
+  min-height: 755px;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/image/testimonials_background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#clientstestimonials .clientstestimonialsmain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#clientstestimonials .clientstestimonialsmain .seeour {
+  width: 3px;
+  height: 27px;
+  background-color: #fd784f;
+}
+#clientstestimonials .clientstestimonialsmain h3 {
+  display: flex;
+  align-items: end;
+  font-size: 24px;
+  font-weight: 700;
+  height: 43px;
+  color: white;
+}
+#clientstestimonials .clientstestimonialsmain span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b0b1b3;
+}
+#clientstestimonials .clientstestimonialsmain p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+  height: 250px;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+#clientstestimonials .clientstestimonialsmain .natalie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 29%;
+  flex-direction: column;
+}
+#clientstestimonials .clientstestimonialsmain .natalie img {
+  border-radius: 50%;
+}
+#clientstestimonials .clientstestimonialsmain .natalie span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fd784f;
+}
+#clientstestimonials .clientstestimonialsmain .natalie .clientstestimonialstext {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#clientsprefer {
+  width: 100%;
+  min-height: 720px;
+  background-image: url(/assets/image/world.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#clientsprefer .clientsprefermain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 300px;
+}
+#clientsprefer .clientsprefermain h3 {
+  display: flex;
+  align-items: end;
+  text-transform: uppercase;
+  color: #1e2c4e;
+  font-weight: 700;
+  font-size: 24px;
+  height: 40px;
+}
+#clientsprefer .clientsprefermain span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b0b1b3;
+}
+#clientsprefer .clientsprefermain .citiesdiv {
+  width: 3px;
+  height: 27px;
+  background-color: #fd784f;
+}
+#clientsprefer .citiesimgall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 33px;
+}
+#clientsprefer .citiesimgall .citiesimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#clientsprefer .citiesimgall .citiesimg img {
+  width: 100%;
+}
+#clientsprefer .citiesimgall .citiesimg p {
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 600;
+  position: absolute;
+  width: 58%;
+  bottom: 0;
+  height: 38px;
+  background: #fd784f;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 55px;
+}
+footer #copyright {
+  width: 100%;
+  height: 100%;
+  background-color: #040b1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #copyright .copyrighttext {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+footer #copyright .copyrighttext p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #485165;
+}
+footer #copyright .copyrighttext p span {
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer #copyright .copyrighttext p span:hover {
+  color: #0056b3;
+}
